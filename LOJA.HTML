@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Store - Layout Simples</title>
+
+    <style>
+        /* Reset básico e tipografia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        /* --- Seção de Cabeçalho Superior --- */
+        .cabecalho-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px 40px;
+        }
+
+        .titulo-loja {
+            font-size: 38px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .tagline {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            text-align: right;
+            margin-top: 5px;
+        }
+
+        /* --- Barra de Navegação Inferior (MODIFICAÇÃO AQUI) --- */
+        .menu-navegacao {
+            width: 100%;
+            background-color: #e6e6e6;
+            padding: 15px 40px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            /* ADICIONA ESPAÇAMENTO NO TOPO */
+            **margin-top: 30px;** }
+
+        .menu-navegacao a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <header class="cabecalho-superior">
+        <div class="titulo-loja">LOJA</div>
+        <div class="tagline">O MELHOR DOS MELHORES</div>
+    </header>
+
+    <nav class="menu-navegacao">
+        <a href="#">orangebok</a>
+        <a href="#">orangephone</a>
+        <a href="#">smartorange</a>
+        <a href="#">airorange</a>
+        <a href="#">airtag</a>
+        <a href="#">acessorios</a>
+    </nav>
+
+</body>
+
+</html>
