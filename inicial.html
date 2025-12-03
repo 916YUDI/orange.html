@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .cor-direita {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
+        }
+
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        /* CARD PADRÃO */
+        .card {
+            width: 85%;
+            max-width: 850px;
+            background: #f0f0f0;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            text-decoration: none;
+            padding: 8px 15px;
+            background: white;
+            border: 1px solid #000;
+            color: #000;
+            font-size: 12px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* SEÇÃO SUPORTE */
+        .suporte-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 0;
+            background: #f3f3f3;
+            margin-top: 40px;
+        }
+
+        .suporte-card {
+            text-decoration: none;
+            color: #000;
+            width: 180px;
+            text-align: center;
+            transition: 0.2s ease;
+        }
+
+        .suporte-card img {
+            width: 45px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .suporte-card h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .suporte-card p {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .suporte-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="cor-direita"></div>
+
+        <div class="menu-esq">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
+                alt="Logo">
+            <a href="#">LOJA</a>
+            <a href="#">ORANGEPHONE</a>
+            <a href="#">SMARTORANGE</a>
+            <a href="#">ORANGEPODS</a>
+        </div>
+
+        <div class="menu-dir">
+            <a href="#"></a>
+            <div class="icon"></div>
+        </div>
+    </header>
+
+
+    <!-- PRIMEIRO CARD -->
+    <div class="card">
+        <h2>ORANGEPHONE</h2>
+        <p>CONHEÇA A NOVA GERAÇÃO DE ORANGEPHONE</p>
+
+        <div class="botoes">
+            <a href="#">CONHEÇA MAIS</a>
+            <a href="#">COMPRE AGORA</a>
+        </div>
+
+        <img src="https://i.imgur.com/xdYHj6H.jpeg" alt="Imagem do produto">
+    </div>
+
+
+    <!-- SEGUNDO CARD -->
+    <div class="card">
+        <h2>NOSSO MAIS NOVO DESTAQUE</h2>
+        <p>FIQUE NA TENDÊNCIA</p>
+
+        <a href="#">COMPRE AGORA</a>
+
+        <img src="https://i.imgur.com/ZK9zVlS.jpeg" alt="Smartwatch">
+    </div>
+
+
+  
+    <div class="suporte-container">
+
+        <a href="#" class="suporte-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2989/2989993.png" alt="Atendimento">
+            <h3>Assistência ao cliente</h3>
+            <p>Fale conosco via chat, email ou telefone</p>
+        </a>
+
+        <a href="#" class="suporte-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="Garantia">
+            <h3>Garantia</h3>
+            <p>A proteção da política de garantia local é fornecida</p>
+        </a>
+
+        <a href="#" class="suporte-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="FAQ">
+            <h3>FAQ</h3>
+            <p>Busque ajuda sobre a empresa</p>
+        </a>
+    </div>
+
+</body>
+</html>
+
