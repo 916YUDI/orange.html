@@ -63,6 +63,17 @@
             border-radius: 50%;
         }
 
+        /* MENSAGEM DO SITE */
+        .mensagem-site {
+            width: 100%;
+            background: #ffe4c2;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+        }
+
         /* CARD PADRÃO */
         .card {
             width: 85%;
@@ -85,7 +96,17 @@
             margin-bottom: 15px;
         }
 
-        .card a {
+        .card img {
+            width: 45%; /* IMAGEM MENOR */
+            margin: 15px auto;
+            display: block;
+        }
+
+        .botoes-card {
+            margin-top: 15px;
+        }
+
+        .botoes-card a {
             text-decoration: none;
             padding: 8px 15px;
             background: white;
@@ -94,12 +115,6 @@
             font-size: 12px;
             margin: 5px;
             display: inline-block;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
         }
 
         /* SEÇÃO SUPORTE */
@@ -162,33 +177,37 @@
         </div>
     </header>
 
+    <!-- MENSAGEM DO SITE -->
+    <div class="mensagem-site">
+        Este é o site oficial de vendas da marca <strong>iOrange</strong>.
+    </div>
 
     <!-- PRIMEIRO CARD -->
     <div class="card">
         <h2>ORANGEPHONE</h2>
         <p>CONHEÇA A NOVA GERAÇÃO DE ORANGEPHONE</p>
 
-        <div class="botoes">
+        <img src="https://i.ibb.co/7tHJtCMZ/iphone-card-40-17pro-202509-FMT-WHH-removebg-preview.png" alt="Imagem do produto">
+
+        <div class="botoes-card">
             <a href="#">CONHEÇA MAIS</a>
             <a href="#">COMPRE AGORA</a>
         </div>
-
-        <img src="https://i.imgur.com/xdYHj6H.jpeg" alt="Imagem do produto">
     </div>
-
 
     <!-- SEGUNDO CARD -->
     <div class="card">
         <h2>NOSSO MAIS NOVO DESTAQUE</h2>
         <p>FIQUE NA TENDÊNCIA</p>
 
-        <a href="#">COMPRE AGORA</a>
+        <img src="https://i.ibb.co/WNY9RRgs/61dnp-FIURh-L-removebg-preview.png" alt="Smartwatch">
 
-        <img src="https://i.ibb.co/WNY9RRgs/61dnp-FIURh-L-removebg-preview.png0" alt="Smartwatch">
+        <div class="botoes-card">
+            <a href="#">CONHEÇA MAIS</a>
+            <a href="#">COMPRE AGORA</a>
+        </div>
     </div>
 
-
-  
     <div class="suporte-container">
 
         <a href="#" class="suporte-card">
