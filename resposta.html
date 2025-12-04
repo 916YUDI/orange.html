@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento QR Code</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(90deg, #d6d6d6 0%, #cfcfcf 40%, #0ba9a0 70%, #5b1e4a 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            border-bottom: 2px solid #00000020;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #222;
+        }
+
+        .payment-page {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-message {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+
+    <main class="payment-page">
+        <div>
+            <h1 class="main-message">LEIA O QR CODE PARA PAGAR</h1>
+            <p class="info-message">
+                SERÁ ENVIADO PARA O SEU<br>EMAIL AS DEMAIS INFORMAÇÕES
+            </p>
+        </div>
+    </main>
+
+   
+
+</body>
+
+</html>
