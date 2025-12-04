@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garantias - iOrange</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment-page {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-message {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 35px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .garantia-card {
+            background: #ffffff;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 16px;
+            color: #444;
+            line-height: 1.5;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="payment-page">
+        <div>
+            <h1 class="main-message">GARANTIAS DE NOSSOS PRODUTOS</h1>
+
+            <div class="card-container">
+
+                <!-- CARD 1 -->
+                <div class="garantia-card">
+                    ✔ Todos os produtos iOrange possuem **garantia oficial**, assegurando a qualidade e
+                    autenticidade de cada item enviado ao cliente.
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="garantia-card">
+                    ✔ Caso o produto apresente **defeito de fábrica**, você poderá solicitar troca ou reembolso,
+                    seguindo as instruções descritas no certificado de garantia.
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="garantia-card">
+                    ✔ Nosso suporte técnico está disponível para auxiliar sobre uso, cuidados, reparos e demais
+                    informações relacionadas à cobertura da garantia.
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
