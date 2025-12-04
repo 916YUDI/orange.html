@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - iOrange</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .faq-page {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .main-title {
+            font-size: 34px;
+            font-weight: 900;
+            margin-bottom: 35px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .faq-card {
+            background: #ffffff;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.4;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="faq-page">
+        <div class="content">
+
+            <h1 class="main-title">FAQ – PERGUNTAS FREQUENTES</h1>
+
+            <div class="cards-container">
+
+                <!-- FAQ 1 -->
+                <div class="faq-card">
+                    <strong>📦 Quanto tempo demora para meu pedido chegar?</strong><br>
+                    O prazo de entrega varia de 5 a 12 dias úteis, dependendo da sua região.
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-card">
+                    <strong>💳 Quais formas de pagamento são aceitas?</strong><br>
+                    Aceitamos cartão, PIX, boleto e pagamento via QR Code.
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-card">
+                    <strong>🔄 Posso trocar um produto?</strong><br>
+                    Sim! Trocas podem ser solicitadas em até 7 dias após o recebimento.
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-card">
+                    <strong>🛡 A garantia cobre quais problemas?</strong><br>
+                    A garantia cobre defeitos de fábrica e mau funcionamento técnico.
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-card">
+                    <strong>📨 Como acompanho meu pedido?</strong><br>
+                    Assim que o produto for enviado, você receberá o código de rastreio por e-mail.
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-card">
+                    <strong>❓ Meu pedido não chegou, o que fazer?</strong><br>
+                    Entre em contato com nosso suporte.
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-card">
+                    <strong>🎧 Como funciona o suporte técnico?</strong><br>
+                    Nossa equipe responde em média dentro de 24h por e-mail ou chat.
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-card">
+                    <strong>🔋 Os produtos acompanham carregador?</strong><br>
+                    Sim, todos acompanham carregador original e cabo.
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
