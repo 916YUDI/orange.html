@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        /* CARD GRANDE */
+        .suporte-card {
+            width: 90%;
+            max-width: 700px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .suporte-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 26px;
+        }
+
+        .suporte-card p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* ÁREA DE MENSAGEM */
+        .mensagem-box {
+            margin-top: 25px;
+            width: 90%;
+            max-width: 700px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .mensagem-box textarea {
+            flex: 1;
+            height: 80px;
+            resize: none;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .mensagem-box button {
+            padding: 12px 20px;
+            background: #00aaff;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .mensagem-box button:hover {
+            background: #0088cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <!-- CARD GRANDE -->
+        <div class="suporte-card">
+            <h2>Suporte Orange</h2>
+            <p>
+                Bem-vindo ao suporte oficial da Orange.  
+                Descreva o seu problema abaixo e nossa equipe responderá o mais rápido possível.
+            </p>
+        </div>
+
+        <!-- ÁREA PARA ENVIAR MENSAGEM -->
+        <div class="mensagem-box">
+            <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
 
