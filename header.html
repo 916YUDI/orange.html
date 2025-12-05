@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orange Store</title>
+    <title>Header Orange Store</title>
 
     <style>
         * {
@@ -14,6 +14,7 @@
             font-family: Arial, sans-serif;
         }
 
+        /* HEADER */
         header {
             width: 100%;
             background: #ffffff;
@@ -31,7 +32,6 @@
             width: 180px;
             height: 100%;
             background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
-
         }
 
         header * {
@@ -62,29 +62,20 @@
             gap: 10px;
         }
 
-        .menu-dir button {
-            background: transparent;
-            border: none;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
+        /* ÍCONE DE PERFIL */
         .icon {
-            width: 28px;
-            height: 28px;
-            background: #000;
-            border-radius: 50%;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 16px;
         }
 
-        /* fim do header*/
-
-        
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
     </style>
 
 </head>
@@ -92,12 +83,10 @@
 <body>
 
     <header>
-
         <div class="cor-direita"></div>
 
         <div class="menu-esq">
-            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
-                alt="Logo">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
             <a href="#">LOJA</a>
             <a href="#">ORANGEPHONE</a>
             <a href="#">SMARTORANGE</a>
@@ -105,10 +94,11 @@
         </div>
 
         <div class="menu-dir">
-            <a href="#"></a>
-            <div class="icon">
-                <img src=""
-            </div>
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
         </div>
     </header>
 
