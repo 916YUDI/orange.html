@@ -19,7 +19,7 @@
             background: #ffffff;
         }
 
-        /* HEADER NOVO */
+        /* HEADER (NOVO) */
         header {
             width: 100%;
             background: #ffffff;
@@ -68,35 +68,28 @@
         }
 
         .icon {
-            width: 28px;
-            height: 28px;
-            background: #000;
-            border-radius: 50%;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 16px;
-            overflow: hidden;
         }
 
         .icon img {
-            width: 18px;
-            height: 18px;
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
 
-
-        /* MENSAGEM ABAIXO DO HEADER */
-        .mensagem-loja {
+        /* MENSAGEM DO SITE (NOVA) */
+        .mensagem-site {
             width: 100%;
+            background: #ffe4c2;
             text-align: center;
-            padding: 12px 0;
-            font-size: 18px;
+            padding: 12px;
+            font-size: 13px;
             font-weight: bold;
-            color: #ff7b00;
-            backdrop-filter: blur(3px);
-            background: rgba(255, 145, 0, 0.15);
-            margin-top: 5px;
+            color: #000;
         }
 
 
@@ -130,7 +123,7 @@
             margin-bottom: 5px;
         }
 
-        /* CARDS DE PRODUTOS */
+        /* CARDS */
         .container-cards {
             display: flex;
             justify-content: center;
@@ -175,9 +168,8 @@
 
 <body>
 
-    <!-- HEADER NOVO ADICIONADO -->
+    <!-- HEADER NOVO -->
     <header>
-
         <div class="cor-direita"></div>
 
         <div class="menu-esq">
@@ -191,15 +183,14 @@
 
         <div class="menu-dir">
             <div class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/3917/3917215.png" alt="User">
+                <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png" alt="User">
             </div>
         </div>
-
     </header>
 
-    <!-- MENSAGEM ABAIXO DO HEADER -->
-    <div class="mensagem-loja">
-        ESSA É A NOSSA LOJA
+    <!-- MENSAGEM DO SITE (ABAIXO DO HEADER) -->
+    <div class="mensagem-site">
+        Este é o site oficial de vendas da marca <strong>iOrange</strong>.
     </div>
 
 
@@ -227,8 +218,7 @@
         </a>
 
         <a href="#" class="item-menu">
-            <img
-                src="https://i.ibb.co/M5gpnwPz/smart-air-tag-rastreador-gps-alarme-de-som-funciona-com-buscar-app-JYWX2-X6-removebg-preview.png">
+            <img src="https://i.ibb.co/M5gpnwPz/smart-air-tag-rastreador-gps-alarme-de-som-funciona-com-buscar-app-JYWX2-X6-removebg-preview.png">
             airtag
         </a>
 
@@ -239,7 +229,8 @@
 
     </nav>
 
-    <!-- PRIMEIRA LINHA DE CARDS -->
+
+    <!-- PRIMEIRA LINHA -->
     <div class="container-cards">
 
         <div class="carditem">
@@ -250,8 +241,7 @@
 
         <div class="carditem">
             <h1>AIRORANGE METALICO</h1>
-            <img
-                src="https://i.ibb.co/2JNVHpQ/fone-de-ouvido-bluetooth-air31-sem-fio-a-prova-d-agua-cancelamento-do-ruido-dos-fones-com-microfone.png">
+            <img src="https://i.ibb.co/2JNVHpQ/fone-de-ouvido-bluetooth-air31-sem-fio-a-prova-d-agua-cancelamento-do-ruido-dos-fones-com-microfone.png">
             <p>R$ 25.500,00</p>
         </div>
 
@@ -260,10 +250,10 @@
             <img src="https://i.ibb.co/xtY9gNwj/b519487e65-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-
     </div>
 
-    <!-- SEGUNDA LINHA DE CARDS (CORRIGIDA) -->
+
+    <!-- SEGUNDA LINHA -->
     <div class="container-cards">
 
         <div class="carditem">
@@ -271,10 +261,10 @@
             <img src="https://i.ibb.co/k6GsrR2D/51xu-DWMXf-RL-AC-UF1000-1000-QL80-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
+
         <div class="carditem">
             <h1>AIRORANGE METALICO</h1>
-            <img
-                src="https://i.ibb.co/2JNVHpQ/fone-de-ouvido-bluetooth-air31-sem-fio-a-prova-d-agua-cancelamento-do-ruido-dos-fones-com-microfone.png">
+            <img src="https://i.ibb.co/2JNVHpQ/fone-de-ouvido-bluetooth-air31-sem-fio-a-prova-d-agua-cancelamento-do-ruido-dos-fones-com-microfone.png">
             <p>R$ 25.500,00</p>
         </div>
 
@@ -283,8 +273,6 @@
             <img src="https://i.ibb.co/xtY9gNwj/b519487e65-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-
-
     </div>
 
 </body>
