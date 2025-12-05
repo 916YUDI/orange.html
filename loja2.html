@@ -19,7 +19,7 @@
             background: #ffffff;
         }
 
-        /* HEADER NOVO */
+        /* HEADER NOVO (SUBSTITUÍDO) */
         header {
             width: 100%;
             background: #ffffff;
@@ -68,37 +68,29 @@
         }
 
         .icon {
-            width: 28px;
-            height: 28px;
-            background: #000;
-            border-radius: 50%;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 16px;
-            overflow: hidden;
         }
 
         .icon img {
-            width: 18px;
-            height: 18px;
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
 
-
-        /* MENSAGEM ABAIXO DO HEADER */
-        .mensagem-loja {
+        /* MENSAGEM OFICIAL iORANGE */
+        .mensagem-site {
             width: 100%;
+            background: #ffe4c2;
             text-align: center;
-            padding: 12px 0;
-            font-size: 18px;
+            padding: 12px;
+            font-size: 13px;
             font-weight: bold;
-            color: #ff7b00;
-            backdrop-filter: blur(3px);
-            background: rgba(255, 145, 0, 0.15);
-            margin-top: 5px;
+            color: #000;
         }
-
 
         /* MENU ALINHADO */
         .menu-navegacao {
@@ -175,14 +167,12 @@
 
 <body>
 
-    <!-- HEADER NOVO ADICIONADO -->
+    <!-- HEADER NOVO SUBSTITUÍDO -->
     <header>
-
         <div class="cor-direita"></div>
 
         <div class="menu-esq">
-            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
-                alt="Logo">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
             <a href="#">LOJA</a>
             <a href="#">ORANGEPHONE</a>
             <a href="#">SMARTORANGE</a>
@@ -190,18 +180,18 @@
         </div>
 
         <div class="menu-dir">
-            <div class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/3917/3917215.png" alt="User">
-            </div>
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
         </div>
-
     </header>
 
-    <!-- MENSAGEM ABAIXO DO HEADER -->
-    <div class="mensagem-loja">
-        ESSA É A NOSSA LOJA
+    <!-- MENSAGEM OFICIAL ABAIXO DO HEADER -->
+    <div class="mensagem-site">
+        Este é o site oficial de vendas da marca <strong>iOrange</strong>.
     </div>
-
 
     <!-- MENU -->
     <nav class="menu-navegacao">
@@ -227,8 +217,7 @@
         </a>
 
         <a href="#" class="item-menu">
-            <img
-                src="https://i.ibb.co/M5gpnwPz/smart-air-tag-rastreador-gps-alarme-de-som-funciona-com-buscar-app-JYWX2-X6-removebg-preview.png">
+            <img src="https://i.ibb.co/M5gpnwPz/smart-air-tag-rastreador-gps-alarme-de-som-funciona-com-buscar-app-JYWX2-X6-removebg-preview.png">
             airtag
         </a>
 
@@ -252,7 +241,6 @@
             <h1>ORANGEBOOK 2S METALICO</h1>
             <img src="https://i.ibb.co/7TkF50v/3cc5b3f8cae6504b5c9f60fe2ff0bfec-removebg-preview.png">
             <p>R$ 25.500,00</p>
-            </p>
         </div>
 
         <div class="carditem">
@@ -265,19 +253,18 @@
 
     <!-- SEGUNDA LINHA DE CARDS -->
     <div class="container-cards">
+
         <div class="carditem">
             <h1>ORANGEBOOK 1S CINZA</h1>
             <img src="https://i.ibb.co/LzRGk3wM/b9351a5d8902e673e7ba45d4d13acc8d-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
+
         <div class="carditem">
             <h1>ORANGEBOOK 2S METALICO</h1>
             <img src="https://i.ibb.co/7TkF50v/3cc5b3f8cae6504b5c9f60fe2ff0bfec-removebg-preview.png">
             <p>R$ 25.500,00</p>
-            </p>
         </div>
-
-
 
         <div class="carditem">
             <h1>ORANGEBOOK 3S PRETO</h1>
