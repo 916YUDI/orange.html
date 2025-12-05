@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         body {
-            font-family: Arial, sans-serif;
             background: #e5e5e5;
             color: #333;
             min-height: 100vh;
@@ -22,36 +22,69 @@
             flex-direction: column;
         }
 
+        /* HEADER ORANGE */
         header {
             width: 100%;
-            height: 80px;
-            background: linear-gradient(90deg, #d6d6d6 0%, #cfcfcf 40%, #0ba9a0 70%, #5b1e4a 100%);
+            background: #ffffff;
+            padding: 8px 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 0 30px;
-            border-bottom: 2px solid #00000020;
+            justify-content: space-between;
+            position: relative;
         }
 
-        .logo img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
+        .cor-direita {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
         }
 
-        nav a {
-            color: #000;
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
             text-decoration: none;
-            margin-left: 25px;
+            font-size: 12px;
+            color: #000;
             font-weight: bold;
-            letter-spacing: 1px;
         }
 
-        nav a:hover {
-            color: #222;
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        /* MENSAGEM PRINCIPAL */
         .payment-page {
             flex: 1;
             display: flex;
@@ -67,24 +100,48 @@
             margin-bottom: 30px;
         }
 
-       
+        .info-message {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER ORANGE INSERIDO -->
+    <header>
+        <div class="cor-direita"></div>
 
+        <div class="menu-esq">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
+            <a href="#">LOJA</a>
+            <a href="#">ORANGEPHONE</a>
+            <a href="#">SMARTORANGE</a>
+            <a href="#">ORANGEPODS</a>
+        </div>
+
+        <div class="menu-dir">
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
     <main class="payment-page">
         <div>
-            <h1 class="main-message">LEIA O QR CODE PARA PAGAR</h1>
+            <h1 class="main-message">SUA RESPOSTA FOI ENVIADA</h1>
             <p class="info-message">
-                SERÁ ENVIADO PARA O SEU<br>EMAIL AS DEMAIS INFORMAÇÕES
+                SERÁ ENVIADO PARA O SEU <br> EMAIL AS DEMAIS INFORMAÇÕES
             </p>
         </div>
     </main>
 
-   
-
 </body>
 
 </html>
+
