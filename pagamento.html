@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         body {
-            font-family: Arial, sans-serif;
             background: #e5e5e5;
             color: #333;
             min-height: 100vh;
@@ -22,36 +22,69 @@
             flex-direction: column;
         }
 
+        /* HEADER ORANGE */
         header {
             width: 100%;
-            height: 80px;
-            background: linear-gradient(90deg, #d6d6d6 0%, #cfcfcf 40%, #0ba9a0 70%, #5b1e4a 100%);
+            background: #ffffff;
+            padding: 8px 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 0 30px;
-            border-bottom: 2px solid #00000020;
+            justify-content: space-between;
+            position: relative;
         }
 
-        .logo img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
+        .cor-direita {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
         }
 
-        nav a {
-            color: #000;
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
             text-decoration: none;
-            margin-left: 25px;
+            font-size: 12px;
+            color: #000;
             font-weight: bold;
-            letter-spacing: 1px;
         }
 
-        nav a:hover {
-            color: #222;
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        /* CONTEÚDO DA PÁGINA */
         .payment-page {
             flex: 1;
             display: flex;
@@ -67,7 +100,6 @@
             margin-bottom: 30px;
         }
 
-        /* QR CODE BONITO E SEM BORDA AZUL */
         .qr-code-img {
             width: 260px;
             height: 260px;
@@ -77,38 +109,13 @@
             padding: 10px;
             border: 3px solid #00000030;
             box-shadow: 0 0 15px #00000020;
+            margin-bottom: 20px;
         }
 
         .info-message {
             font-size: 18px;
             font-weight: bold;
             line-height: 1.4;
-        }
-
-        footer {
-            background: linear-gradient(90deg, #1f083d, #008080);
-            color: white;
-            padding: 20px 40px;
-        }
-
-        .footer-grid {
-            max-width: 900px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .section h3 {
-            margin-bottom: 10px;
-        }
-
-        .icon {
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: white;
-            margin-right: 5px;
-            display: inline-block;
         }
 
         @media (max-width: 768px) {
@@ -120,36 +127,38 @@
                 width: 210px;
                 height: 210px;
             }
-
-            .footer-grid {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER ORANGE -->
     <header>
-        <div class="logo">
-            <img src="https://i.ibb.co/pqnFHHQ/Captura-de-tela-2025-11-24-100501.png" alt="logo">
+        <div class="cor-direita"></div>
+
+        <div class="menu-esq">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
+            <a href="#">LOJA</a>
+            <a href="#">ORANGEPHONE</a>
+            <a href="#">SMARTORANGE</a>
+            <a href="#">ORANGEPODS</a>
         </div>
 
-        <nav>
-            <a href="somos">O QUE SOMOS</a>
-            <a href="cursos">CURSOS</a>
-            <a href="biblioteca">BIBLIOTECA</a>
-            <a href="loja">LOJA</a>
-        </nav>
+        <div class="menu-dir">
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
+        </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="payment-page">
         <div>
             <h1 class="main-message">LEIA O QR CODE PARA PAGAR</h1>
 
-            <!-- QR CODE ARRUMADO -->
             <img class="qr-code-img" src="https://cdn.jornalestadodegoias.com.br/wp-content/uploads/2020/04/qr-code.jpg" alt="QR Code">
 
             <p class="info-message">
@@ -157,29 +166,6 @@
             </p>
         </div>
     </main>
-
-    <footer>
-        <div class="footer-grid">
-
-            <div class="section">
-                <h3>REDES SOCIAIS</h3>
-                <p><span class="icon"></span>TIK TOK</p>
-                <p><span class="icon"></span>INSTAGRAM</p>
-            </div>
-
-            <div class="section">
-                <h3>COMERCIAL</h3>
-                <p>(41) 9785-8907</p>
-            </div>
-
-            <div class="section">
-                <h3>SUPORTE</h3>
-                <p>0800 003 0200</p>
-                <p><strong>SUPORTE@AQX.COM</strong></p>
-            </div>
-
-        </div>
-    </footer>
 
 </body>
 
