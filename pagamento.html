@@ -22,7 +22,86 @@
             flex-direction: column;
         }
 
+        /* ------------------------- */
+        /* HEADER ORIGINAL RESTAURADO */
+        /* ------------------------- */
+        header {
+            width: 100%;
+            background: #ffffff;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .cor-direita {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
+        }
+
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        /* ------------------------- */
+        /* MENSAGEM DO SITE */
+        /* ------------------------- */
+        .mensagem-site {
+            width: 100%;
+            background: #ffe4c2;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* ------------------------- */
         /* CONTEÚDO DA PÁGINA */
+        /* ------------------------- */
         .payment-page {
             flex: 1;
             display: flex;
@@ -56,27 +135,54 @@
             line-height: 1.4;
         }
 
-        @media (max-width: 768px) {
-            .main-message {
-                font-size: 24px;
-            }
 
-            .qr-code-img {
-                width: 210px;
-                height: 210px;
-            }
+        .main-message {
+            font-size: 24px;
+        }
+
+        .qr-code-img {
+            width: 210px;
+            height: 210px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER ORIGINAL -->
+    <header>
+        <div class="cor-direita"></div>
+
+        <div class="menu-esq">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
+                alt="Logo">
+            <a href="#">LOJA</a>
+            <a href="#">ORANGEPHONE</a>
+            <a href="#">SMARTORANGE</a>
+            <a href="#">ORANGEPODS</a>
+        </div>
+
+        <div class="menu-dir">
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- MENSAGEM DO SITE (ABAIXO DO HEADER) -->
+    <div class="mensagem-site">
+        Pagina de pagamento da <strong>iOrange</strong>.
+    </div>
+
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="payment-page">
         <div>
             <h1 class="main-message">LEIA O QR CODE PARA PAGAR</h1>
 
-            <img class="qr-code-img" src="https://cdn.jornalestadodegoias.com.br/wp-content/uploads/2020/04/qr-code.jpg" alt="QR Code">
+            <img class="qr-code-img" src="https://cdn.jornalestadodegoias.com.br/wp-content/uploads/2020/04/qr-code.jpg"
+                alt="QR Code">
 
             <p class="info-message">
                 SERÁ ENVIADO PARA O SEU<br>EMAIL AS DEMAIS INFORMAÇÕES
