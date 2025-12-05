@@ -19,7 +19,7 @@
             background: #ffffff;
         }
 
-        /* HEADER NOVO */
+        /* HEADER NOVO (substituído) */
         header {
             width: 100%;
             background: #ffffff;
@@ -68,37 +68,29 @@
         }
 
         .icon {
-            width: 28px;
-            height: 28px;
-            background: #000;
-            border-radius: 50%;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 16px;
-            overflow: hidden;
         }
 
         .icon img {
-            width: 18px;
-            height: 18px;
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
 
-
-        /* MENSAGEM ABAIXO DO HEADER */
-        .mensagem-loja {
+        /* MENSAGEM DO SITE */
+        .mensagem-site {
             width: 100%;
+            background: #ffe4c2;
             text-align: center;
-            padding: 12px 0;
-            font-size: 18px;
+            padding: 12px;
+            font-size: 13px;
             font-weight: bold;
-            color: #ff7b00;
-            backdrop-filter: blur(3px);
-            background: rgba(255, 145, 0, 0.15);
-            margin-top: 5px;
+            color: #000;
         }
-
 
         /* MENU ALINHADO */
         .menu-navegacao {
@@ -170,19 +162,16 @@
             transform: scale(1.05);
         }
     </style>
-
 </head>
 
 <body>
 
-    <!-- HEADER NOVO ADICIONADO -->
+    <!-- HEADER NOVO -->
     <header>
-
         <div class="cor-direita"></div>
 
         <div class="menu-esq">
-            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
-                alt="Logo">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
             <a href="#">LOJA</a>
             <a href="#">ORANGEPHONE</a>
             <a href="#">SMARTORANGE</a>
@@ -190,22 +179,21 @@
         </div>
 
         <div class="menu-dir">
-            <div class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/3917/3917215.png" alt="User">
-            </div>
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
         </div>
-
     </header>
 
-    <!-- MENSAGEM ABAIXO DO HEADER -->
-    <div class="mensagem-loja">
-        ESSA É A NOSSA LOJA
+    <!-- MENSAGEM DO SITE -->
+    <div class="mensagem-site">
+        Este é o site oficial de vendas da marca <strong>iOrange</strong>.
     </div>
-
 
     <!-- MENU -->
     <nav class="menu-navegacao">
-
         <a href="#" class="item-menu">
             <img src="https://i.ibb.co/WNkBPCpC/41-9i-Alnot-S-AC-UF1000-1000-QL80-removebg-preview.png">
             orangebok
@@ -235,12 +223,10 @@
             <img src="https://i.ibb.co/B50vKmvL/165622-800-800-removebg-preview.png">
             acessorios
         </a>
-
     </nav>
 
     <!-- PRIMEIRA LINHA DE CARDS -->
     <div class="container-cards">
-
         <div class="carditem">
             <h1>AIRTAG BRANCA</h1>
             <img src="https://i.ibb.co/93hM2cwk/51-DKFp8-I7-HL-AC-UF1000-1000-QL80-removebg-preview.png">
@@ -258,33 +244,29 @@
             <img src="https://i.ibb.co/F4HFmnSQ/61-Pzh-W9v-K4-L-AC-UF1000-1000-QL80-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-
     </div>
 
-    <!-- SEGUNDA LINHA DE CARDS (CORRIGIDA) -->
+    <!-- SEGUNDA LINHA DE CARDS -->
     <div class="container-cards">
-
-    <div class="carditem">
+        <div class="carditem">
             <h1>AIRTAG BRANCA</h1>
             <img src="https://i.ibb.co/93hM2cwk/51-DKFp8-I7-HL-AC-UF1000-1000-QL80-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-    <div class="carditem">
+
+        <div class="carditem">
             <h1>SMART TAG</h1>
             <img src="https://i.ibb.co/rK4fVKgw/21-Fk-H4zv-Je-L-AC-UF1000-1000-QL80-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-       
+
         <div class="carditem">
             <h1>AIR TAG 2 PRETA</h1>
             <img src="https://i.ibb.co/F4HFmnSQ/61-Pzh-W9v-K4-L-AC-UF1000-1000-QL80-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-
-
     </div>
 
 </body>
 
 </html>
-
