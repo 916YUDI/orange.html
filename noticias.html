@@ -4,84 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cartão de Notícia</title>
+    <title>Orange Store - Notícias</title>
 
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            padding: 20px;
         }
 
-        /* Cartão de notícia */
-        .cartao-noticia {
+        /* HEADER */
+        header {
             width: 100%;
-            max-width: 750px;
-            height: 260px;
-            margin: auto;
-            border-radius: 15px;
-            overflow: hidden;
+            background: #ffffff;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             position: relative;
-
-            /* imagem de fundo */
-            background-image: url("https://i.ibb.co/PmS2tFh/pexels-cottonbro-5082579.jpg");
-            background-size: cover;     /* cobre tudo */
-            background-position: center; /* centraliza */
-            color: white;
         }
 
-        /* Camada escura sobre a imagem */
-        .cartao-noticia::before {
-            content: "";
+        .cor-direita {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.45);
+            right: 0;
             top: 0;
-            left: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
         }
 
-        /* Área de texto */
-        .conteudo-noticia {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
+        header * {
+            position: relative;
+            z-index: 1;
         }
 
-        /* Categoria */
-        .tag-noticia {
-            font-size: 13px;
-            opacity: 0.9;
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
-        /* Título */
-        .titulo-noticia {
-            font-size: 22px;
-            margin: 5px 0;
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
             font-weight: bold;
         }
 
-        /* Subtítulo */
-        .sub-noticia {
-            font-size: 15px;
-            opacity: 0.9;
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* ÍCONE DE PERFIL ARRUMADO */
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        /* CARDS */
+        body {
+            background: #ffffff;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .noticia-card {
+            width: 380px;
+            height: 220px;
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+            color: white;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+            margin: 20px auto;
+        }
+
+        .noticia-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .categoria {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.60);
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .titulo {
+            position: absolute;
+            bottom: 18px;
+            left: 12px;
+            right: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.3;
+            text-shadow: 0 0 6px black;
         }
     </style>
+
 </head>
 
 <body>
 
-    <div class="cartao-noticia">
-        <div class="conteudo-noticia">
-            <div class="tag-noticia">Destaque</div>
-            <div class="titulo-noticia">Título da Notícia Exemplo Aqui</div>
-            <div class="sub-noticia">Descrição breve da notícia aparece aqui...</div>
+    <header>
+        <div class="cor-direita"></div>
+
+        <div class="menu-esq">
+            <img src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png" alt="Logo">
+            <a href="#">LOJA</a>
+            <a href="#">ORANGEPHONE</a>
+            <a href="#">SMARTORANGE</a>
+            <a href="#">ORANGEPODS</a>
         </div>
+
+        <div class="menu-dir">
+            <div class="icon">
+                <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="noticia-card">
+            <img src="https://i.ibb.co/7NxyVvP2/0c03da5fe1a6cc26c6569705b8adadb2-removebg-preview.png">
+            <div class="categoria">Tecnologia</div>
+            <div class="titulo">Orange lança o novo OrangePhone 1S com desempenho avançado e preço acessível</div>
+        </div>
+
+        <div class="noticia-card">
+            <img src="https://i.ibb.co/7NxyVvP2/0c03da5fe1a6cc26c6569705b8adadb2-removebg-preview.png">
+            <div class="categoria">Tecnologia</div>
+            <div class="titulo">Novo OrangePhone 1S chega ao mercado com câmera aprimorada e bateria otimizada</div>
+        </div>
+
+        <div class="noticia-card">
+            <img src="https://i.ibb.co/7NxyVvP2/0c03da5fe1a6cc26c6569705b8adadb2-removebg-preview.png">
+            <div class="categoria">Tecnologia</div>
+            <div class="titulo">OrangePhone 1S se destaca como o smartphone mais equilibrado do ano</div>
+        </div>
+
     </div>
 
 </body>
 
 </html>
-
