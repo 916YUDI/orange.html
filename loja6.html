@@ -19,7 +19,7 @@
             background: #ffffff;
         }
 
-        /* HEADER NOVO */
+        /* HEADER ORIGINAL QUE VOCÊ PEDIU */
         header {
             width: 100%;
             background: #ffffff;
@@ -68,24 +68,20 @@
         }
 
         .icon {
-            width: 28px;
-            height: 28px;
-            background: #000;
-            border-radius: 50%;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 16px;
-            overflow: hidden;
         }
 
         .icon img {
-            width: 18px;
-            height: 18px;
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
 
-        /* MENSAGEM DO SITE (ADICIONADA) */
+        /* MENSAGEM DO SITE */
         .mensagem-site {
             width: 100%;
             background: #ffe4c2;
@@ -96,19 +92,7 @@
             color: #000;
         }
 
-        /* MENSAGEM ABAIXO DO HEADER */
-        .mensagem-loja {
-            width: 100%;
-            text-align: center;
-            padding: 12px 0;
-            font-size: 18px;
-            font-weight: bold;
-            color: #ff7b00;
-            backdrop-filter: blur(3px);
-            background: rgba(255, 145, 0, 0.15);
-            margin-top: 5px;
-        }
-
+        
         /* MENU ALINHADO */
         .menu-navegacao {
             width: 100%;
@@ -139,7 +123,7 @@
             margin-bottom: 5px;
         }
 
-        /* CARDS DE PRODUTOS */
+        /* CARDS */
         .container-cards {
             display: flex;
             justify-content: center;
@@ -184,7 +168,7 @@
 
 <body>
 
-    <!-- HEADER NOVO ADICIONADO -->
+    <!-- HEADER ORIGINAL QUE VOCÊ MANDOU -->
     <header>
         <div class="cor-direita"></div>
 
@@ -197,21 +181,20 @@
         </div>
 
         <div class="menu-dir">
-            <div class="icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/3917/3917215.png" alt="User">
-            </div>
+            <a href="perfil.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
         </div>
     </header>
 
-    <!-- MENSAGEM OFICIAL DO SITE (NOVA) -->
+    <!-- AVISO DO SITE -->
     <div class="mensagem-site">
         Este é o site oficial de vendas da marca <strong>iOrange</strong>.
     </div>
 
-    <!-- MENSAGEM ABAIXO DO HEADER -->
-    <div class="mensagem-loja">
-        ESSA É A NOSSA LOJA
-    </div>
+  
 
     <!-- MENU -->
     <nav class="menu-navegacao">
@@ -246,7 +229,7 @@
         </a>
     </nav>
 
-    <!-- PRIMEIRA LINHA DE CARDS -->
+    <!-- CARDS -->
     <div class="container-cards">
         <div class="carditem">
             <h1>CAPINHA BORBOLETA</h1>
@@ -267,7 +250,7 @@
         </div>
     </div>
 
-    <!-- SEGUNDA LINHA DE CARDS -->
+    <!-- SEGUNDA LINHA -->
     <div class="container-cards">
         <div class="carditem">
             <h1>CAPINHA BORBOLETA</h1>
@@ -280,7 +263,7 @@
             <img src="https://i.ibb.co/k2H83G3N/images-1-removebg-preview-1-removebg-preview.png">
             <p>R$ 25.500,00</p>
         </div>
-       
+
         <div class="carditem">
             <h1>CAPINHA ARCO-IRIS</h1>
             <img src="https://i.ibb.co/DgbS7t1y/images-2-removebg-preview.png">
